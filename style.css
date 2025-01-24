@@ -1,0 +1,59 @@
+/* Add a beautiful background */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://www.w3schools.com/w3images/nature.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for video thumbnails */
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* Style each video thumbnail */
+.video {
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Scale up on hover */
+.video:hover {
+    transform: scale(1.1);
+}
+
+/* Image styling for the thumbnail */
+.video img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Styling for the title under each thumbnail */
+.video h3 {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Player container styling */
+.player-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* YouTube iframe player styling */
+#player {
+    max-width: 100%;
+    width: 800px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
